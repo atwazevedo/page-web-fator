@@ -1,0 +1,42 @@
+/*--------------Layout-----------*/
+body{
+    background:url('Imagens/teste-1.png');
+    background-attachment:fixed;
+}
+/*Barra de Menu*/
+
+.img-logo{
+    padding-top:10px;
+    padding-bottom:40px;
+    padding-left: 50px;
+    margin-left:50px;
+    background: url('/home/arthur/GitHub_Clone/Projeto Fator/Imagens/Logo_Web.svg') no-repeat;
+    background-size: contain;
+    color: transparent;
+
+}
+
+nav.navbar-transparente{
+    padding: 18px 0px;
+    background: rgba(0,0,0,0.6);
+    border:none;
+}
+
+
+.navbar-brand{
+    padding:0px;
+}
+
+.divisor{
+    width:1px;
+    height:16px;
+    background:white;
+    margin:18px 5px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color:#00FFBF;
+}
+
+/** ------------CAPA PRINCIPAL---------------------**/
+
