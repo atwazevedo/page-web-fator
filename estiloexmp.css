@@ -1,0 +1,178 @@
+/*--------------------Layout-------------*/
+body,html,.capa{  /* Desta forma, você indica que as tags, html, body e a classe capa, ocupem toda a área
+    de navegação*/
+height:100%;
+}
+
+body{
+background:url('/home/arthur/GitHub_Clone/Curso_Web/Projeto Spotify/Arquivo_Origem/projeto-inicial-spotify/imagens/capa.png'),
+url('/home/arthur/GitHub_Clone/Curso_Web/Projeto Spotify/Arquivo_Origem/projeto-inicial-spotify/imagens/ruido.png'),
+linear-gradient(50deg, #ff4169,#7c26f8);
+background-attachment: fixed; /* Esta propriedade no CSS permite que o background, neste caso, a imagem
+                  fique travada no fundo, movimentando somente a parte superior*/
+font-family:Helvetica,Arial,sans-serif; 
+overflow-x: hidden;
+}
+
+/*---Barra Navegação---*/
+.img-logo {
+height:40px;
+width:132px;
+display:block;
+background: url('/home/arthur/GitHub_Clone/Curso_Web/Projeto Spotify/Arquivo_Origem/projeto-inicial-spotify/imagens/spotify.svg') no-repeat;
+background-size:contain;
+color:transparent; /* Esta propriedade serve para esconder o texto spotify*/
+}
+
+nav.navbar-transparente{
+padding:15px 0px; /*Para ajustar o tamanho da barra de menu*/
+background:rgba(0,0,0,0.6); /* Esta propriedade é para a aplicar a transparência do menu*/
+border:none;
+}
+
+.navbar-brand{ /* Foi reaproveitado esta classe do bootstrap para 
+    fazer os ajustes na centralização da logomarca*/
+padding:5px 15px; 
+}
+
+.divisor{
+width:1px;
+height:16px;
+background:white;
+margin:16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a { /*Esta propriedade está informando que deve-se formatar a tag "a", que
+                    no caso, é filha da tag "li", que por sua vez está dentro das classes
+                    navbar-inverse e navbar-nav. Note que o simbolo > indica a cadeia*/
+color:white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
+color:#9bf0e1;
+background: none;
+}
+
+/*--------Capa Principal do Site---------*/
+
+.capa{
+border:solid red;
+display:table;
+width:100%;
+}
+
+.texto-capa{
+text-align:center;
+color: white;
+display:table-cell;
+vertical-align: middle;
+}
+
+/*-------Formatação de Botão----------*/
+
+.btn-custom{
+color: white;
+border-radius:500px;
+-webkit-border-radius:500px;
+-moz-border-radius:500px;
+padding:10px 35px;
+margin:0px 15px;
+text-transform:uppercase; /* Esta propriedade permite que você possa colocar as letras todas 
+                em maiusculo.*/
+transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo {
+background: #7c25f8;
+}
+.btn-roxo:hover{
+background-color:#6207e3;
+color: white;
+}
+
+.btn-branco{
+border:2px solid white;
+}
+
+.btn-branco:hover{
+background-color: white;
+color: black;
+}
+
+/*-----Serviços------*/
+
+#serviços{
+background:white;
+padding-top:20px;
+padding-bottom:20px;
+padding-left:50px;
+padding-right:50px;
+}
+
+.albuns{
+padding: 10px 0px 10px 0px;
+}
+
+/*------Recursos--------*/
+
+#recursos{
+padding-top: 20px;
+padding-bottom:20px;
+color: white;
+
+}
+
+.rotacionar{
+transform: rotate(30deg);
+-ms-transform: rotate(30deg);
+-webkit-transform:rotate(30deg);
+padding-left:80px;
+
+}
+
+/*-----Roda-pé-----*/
+
+footer{
+background:#000;
+padding:50px 0px 20px 0px;
+position:relative;
+}
+
+.item-rede-social{
+float:right;
+}
+
+/*------------------Tipo-Grafia-------------*/
+
+h1{
+font-size:100px;
+font-weight:900;
+letter-spacing:-0.05em;
+margin-bottom:50px;
+}
+
+h2{
+font-size: 50px;
+font-weight: 700;
+letter-spacing: -0.04em;
+}
+
+h3{
+font-size: 35px;
+font-weight: 700;
+letter-spacing:-0.04em;
+}
+
+#rodape h4{
+color:#919496;
+font-size:12px;
+text-transform: uppercase;
+}
+
+#serviços h2,#serviços h3{
+color:#7c25f8;
+}
+
+#recursos h3{
+color: #9bf0e1;
+}
